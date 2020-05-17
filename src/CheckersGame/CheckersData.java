@@ -128,7 +128,7 @@ public class CheckersData implements PieceValues{
     * @param y2 column of the second square
     * @param x3 row of the third square
     * @param y3 column of the third square    */
-   public boolean canJump(int color, int x1,int y1 , int x2 , int y2, int x3, int y3){
+   private boolean canJump(int color, int x1,int y1 , int x2 , int y2, int x3, int y3){
            
       if (x3 < 0 || x3 >= 8 || y3 < 0 || y3 >= 8) // if true the third square is out of the board
          return false;  
@@ -157,7 +157,7 @@ public class CheckersData implements PieceValues{
     * @param y1 column of the first square
     * @param x2 row of the second square
     * @param y2 column of the second square */
-   public boolean canMove(int color,int x1,int y1, int x2 , int y2){ //same logic
+   private boolean canMove(int color,int x1,int y1, int x2 , int y2){ //same logic
       boolean answer = true;
       if (x2 < 0 || x2 >= 8 || y2 < 0 || y2 >= 8)
          return false;  
